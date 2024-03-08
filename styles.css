@@ -1,0 +1,445 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    color: #ededed;
+    background-color: #081b29;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background:#051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #da0606;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideright 1s ease forwards;
+
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+}
+.navbar a:hover{
+    color: rgb(42, 203, 214);
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url(portfolioweb.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10px 0;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700px;
+    opacity: 0;
+    animation: slideButtom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.home-content h3:nth-last-of-type(2){
+    margin-bottom: 30px; 
+}
+.home-content h3 span{
+    color:#0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700px;
+    margin: -3px 0;
+
+
+}
+.home-content p {
+    font-size: 20px;
+    
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+
+   
+    
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: right;
+    gap: 1.5rem;
+}
+.about-img img{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 630px;
+    height: auto;
+    width: 3000px;
+    border-radius: 200px;
+
+}
+.about-text h2{
+    font-size: 60px;
+
+}
+.about-text h2 span{
+    color: #0ef;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideButtom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #081b29;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(6, 212, 253);
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+}
+
+.contact-section h2 {
+    color: #081b29;
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: rgb(0, 172, 224); /* Make border transparent initially */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.5s; /* Add transition effect */
+}
+
+.contact-section input[type="text"]:focus,
+.contact-section input[type="email"]:focus,
+.contact-section textarea:focus {
+    border-color: #ffcc00; /* Change border color on focus */
+    outline: none;
+}
+
+.contact-section button {
+    padding: 12px 20px;
+    background-color: #0ef;
+    color: #fff;
+    border: 2px solid transparent; /* Make border transparent initially */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: border-color 0.5s; /* Add transition effect */
+}
+
+.contact-section button:hover {
+    border-color: #ffcc00; /* Change border color on hover */
+}
+
+.contact-section button:focus {
+    outline: none;
+}
+
+/* Glowing effect for borders */
+@keyframes glowing {
+    0% { border-color: #ffcc00; }
+    100% { border-color: #ffdd44; }
+    200% { border-color: #ffcc00; }
+}
+
+.contact-section input[type="text"]:focus,
+.contact-section input[type="email"]:focus,
+.contact-section textarea:focus,
+.contact-section button:focus
+ {
+    animation: glowing 1.5s infinite alternate;
+}
+
+
+.education-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 247, 255, 0.989);
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+}
+
+.education-section h2 {
+    color: #081b29;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.education-item {
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.education-item:hover {
+    border-color: #00ff80;
+}
+
+.education-item h4 {
+    color: #0ef;
+    font-size: 24px;
+}
+
+.education-item .university {
+    color: #140e0c;
+    margin-bottom: 5px;
+}
+
+.education-item .year {
+    color: #10d8eb;
+    font-style: italic;
+}
+
+
+.skills-section {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(5, 222, 251, 0.984);
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+}
+
+.skills-section h2 {
+    color: #081b29;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(6, 197, 255, 0.974);
+    padding: 20px;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    color: #081b29;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #007bff;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease;
+}
+
+.html {
+    background-color: #f16529;
+}
+
+.css {
+    background-color: #2965f1;
+}
+
+.js {
+    background-color: #f1db4f;
+}
+
+.skill:hover .progress {
+    width: 100%;
+}
+
+.about-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(4, 229, 250);
+    text-align: center;
+    max-width: 600px;
+    margin: 40px;
+}
+
+.about-section h2 {
+    color: #080808;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(0, 213, 255);
+    text-align: left;
+}
+
+.about-box h3 {
+    color: #081b29;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    color: #081b29;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
